@@ -1,0 +1,1 @@
+lua require('rasmus').colorscheme()
