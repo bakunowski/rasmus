@@ -37,13 +37,35 @@ local colors = {
   gray12         = "#6a6a69",
   gray13         = "#b6b6b5",
   gray02         = "#b7b7b6",
-  gray03         = "#ceceb5",
+  gray03         = "#ceceb5", -- unused
   gray01         = "#edede4",
   light          = "#fdfdfc",
   white          = "#d1d1d1",
   bright_white   = "#eaeaea",
 
   none = "NONE",
+
+  background  = '#d9d5ba',
+  foreground  = '#444444',
+  foreground2 = '#888888',
+  color0      = '#d9d5ba',
+  cc          = '#d2cdad',
+  color1      = '#825b69',
+  color2      = '#69825b',
+  color3      = '#82755b',
+  color4      = '#5b6982',
+  color5      = '#755b82',
+  color6      = '#5b8275',
+  color7      = '#494949',
+  color8      = '#333333',
+  color9      = '#bda0aa',
+  color10     = '#aabda0',
+  color11     = '#bdb3a0',
+  color12     = '#7484a2',
+  color13     = '#b3a0bd',
+  color14     = '#a0bdb3',
+  color15     = '#494847',
+  color16     = '#555555',
 }
 
 function M.setup(theme)
