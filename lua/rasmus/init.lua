@@ -63,8 +63,8 @@ local set_groups = function(c)
     PmenuSbar                  = { fg = c.fg, bg = c.bg2 },
     PmenuThumb                 = { fg = c.fg, bg = c.bg3 },
     Question                   = { fg = c.fg, style = "bold" },
-    QuickFixLine               = { fg = c.c3, bg = c.fg, style = "bold,italic" },
-    qfLineNr                   = { fg = c.c3, bg = c.fg },
+    QuickFixLine               = { fg = c.none, bg = c.bg2, style = "bold,italic" },
+    qfLineNr                   = { fg = c.none, bg = c.bg2 },
     Search                     = { style = "reverse" },
     SpecialKey                 = { fg = c.bg5 },
     SpellBad                   = { fg = c.error, bg = c.none, style = "italic,undercurl" },
@@ -188,16 +188,18 @@ local set_groups = function(c)
     TSException                = { fg = c.error }, -- For exception related keywords.
     TSField                    = { fg = c.fg }, -- For fields.
     TSFloat                    = { fg = c.c5 }, -- For floats.
-    TSFunction                 = { fg = c.fg }, -- For fuction (calls and definitions).
+    TSFunction                 = { fg = c.fg0, style = "bold" }, -- For fuction definitions.
+    TSFunctionCall             = { fg = c.fg }, -- For fuction calls.
     TSFuncBuiltin              = { fg = c.c5 }, -- For builtin functions: `table.insert` in Lua.
     TSFuncMacro                = { fg = c.fg }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     TSInclude                  = { fg = c.c3 }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSKeyword                  = { fg = c.c3 }, -- For keywords that don't fall in previous categories.
     TSKeywordFunction          = { fg = c.c3 }, -- For keywords used to define a fuction.
     TSKeywordOperator          = { fg = c.fg }, -- For operators that are English words, e.g. `and`, `as`, `or`.
-    TSKeywordReturn            = { fg = c.error }, -- For the `return` and `yield` keywords.
+    TSKeywordReturn            = { fg = c.c3 }, -- For the `return` and `yield` keywords.
     TSLabel                    = { fg = c.fg }, -- For labels: `label:` in C and `:label:` in Lua.
-    TSMethod                   = { fg = c.fg }, -- For method calls and definitions.
+    TSMethod                   = { fg = c.fg0, style = "bold" }, -- For method definitions.
+    TSMethodCall               = { fg = c.fg }, -- For method calls.
     TSNamespace                = { fg = c.fg }, -- For identifiers referring to modules and namespaces.
     -- TSNone = {}, -- No highlighting. Don't change the values of this highlight group.
     TSNumber                   = { fg = c.c5 }, -- For all numbers
@@ -205,9 +207,9 @@ local set_groups = function(c)
     TSParameter                = { fg = c.fg }, -- For parameters of a function.
     TSParameterReference       = { fg = c.fg }, -- For references to parameters of a function.
     TSProperty                 = { fg = c.fg }, -- Same as `TSField`.
-    TSPunctDelimiter           = { fg = c.fg }, -- For delimiters ie: `.`
-    TSPunctBracket             = { fg = c.fg }, -- For brackets and parens.
-    TSPunctSpecial             = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
+    TSPunctDelimiter           = { fg = c.c10 }, -- For delimiters ie: `.`
+    TSPunctBracket             = { fg = c.c10 }, -- For brackets and parens.
+    TSPunctSpecial             = { fg = c.c10 }, -- For special punctutation that does not fall in the catagories before.
     TSRepeat                   = { fg = c.c3 }, -- For keywords related to loops.
     TSString                   = { fg = c.c7 }, -- For strings.
     TSStringRegex              = { fg = c.c7 }, -- For regexes.
@@ -232,8 +234,8 @@ local set_groups = function(c)
     TSNote                     = { fg = c.c3, style = "italic" }, -- Text representation of an informational note.
     TSWarning                  = { fg = c.c6, style = "italic" }, -- Text representation of a warning note.
     TSDanger                   = { fg = c.c8, style = "italic" }, -- Text representation of a danger note.
-    TSType                     = { fg = c.fg }, -- For types.
-    TSTypeBuiltin              = { fg = c.c5 }, -- For builtin types.
+    TSType                     = { fg = c.c9 }, -- For types.
+    TSTypeBuiltin              = { fg = c.c9 }, -- For builtin types.
     TSVariable                 = { fg = c.fg }, -- Any variable name that does not have another highlight.
     TSVariableBuiltin          = { fg = c.c6 }, -- Variable names that are defined by the languages, like `this` or `self`.
     -- highlight groups for the native LSP client
@@ -342,7 +344,7 @@ M.colorscheme = function()
   if (vim.opt.background:get() == "dark") then
     c = themes.setup("dark")
   else
-    c = themes.setup("light2")
+    c = themes.setup("light")
   end
 
   -- set_terminal_colors(c)

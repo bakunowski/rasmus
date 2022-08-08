@@ -1,44 +1,4 @@
 return {
-  light = function(colors)
-    return {
-      bg = colors.light,
-      fg = colors.dark,
-
-      black   = colors.dark2,
-      red     = colors.red,
-      green   = colors.green2,
-      yellow  = colors.gray,
-      blue    = colors.blue2,
-      blue2   = colors.gray,
-      magenta = colors.magenta,
-      cyan    = colors.green,
-      cyan2   = colors.cyan,
-      white   = colors.white,
-
-      bright_black   = colors.bright_black,
-      bright_red     = colors.bright_red,
-      bright_green   = colors.bright_green,
-      bright_yellow  = colors.bright_yellow,
-      bright_blue    = colors.bright_blue,
-      bright_magenta = colors.bright_magenta,
-      bright_cyan    = colors.bright_cyan,
-      bright_white   = colors.bright_white,
-
-      gray01 = colors.gray01,
-      gray02 = colors.gray01,
-      gray03 = colors.gray02,
-      gray04 = colors.gray04,
-      gray05 = colors.gray05,
-      gray06 = colors.gray06,
-      gray07 = colors.gray07,
-      fg2    = colors.gray07,
-      gray08 = colors.gray02,
-      none   = "NONE",
-
-      mb = colors.blue, -- matching bracket
-      cc = colors.gray01,
-    }
-  end,
   dark = function(colors)
     return {
       bg = colors.bg,
@@ -47,6 +7,7 @@ return {
       bg4 = colors.gray09,
       bg5 = colors.gray11,
 
+      fg0 = colors.k_l,
       fg  = colors.white,
       fg2 = colors.gray12,
       fg3 = colors.gray13,
@@ -59,6 +20,8 @@ return {
       c6 = colors.yellow, --
       c7 = colors.cyan2, -- strings
       c8 = colors.color1,
+      c9 = colors.bright_yellow2, -- types
+      c10 = colors.gray06, -- brackets
 
       error = colors.red2,
       warning = colors.yellow,
@@ -70,30 +33,31 @@ return {
       delete = colors.bright_red,
 
       mb = colors.light, -- matching bracket
-      yellow = colors.foreground,
+      yellow = colors.magenta,
+      kr = colors.white,
 
       none = "NONE",
     }
   end,
-  light2 = function(colors)
+  light = function(colors)
     return {
-      bg  = colors.background,
-      bg2 = colors.cc,
+      bg  = colors.k_l,
+      bg2 = colors.k_l2,
       bg3 = colors.gray06,
-      bg4 = colors.color8,
-      bg5 = colors.gray13,
+      bg4 = colors.k_b2,
+      bg5 = colors.k_l2,
 
-      fg  = colors.foreground,
+      fg  = colors.k_b,
       fg2 = colors.foreground2,
-      fg3 = colors.color0,
+      fg3 = colors.k_l2,
 
-      c1 = colors.color5, -- booleans, numbers
-      c2 = colors.foreground2, -- comments
+      c1 = colors.k_1, -- booleans, numbers
+      c2 = colors.k_b2, -- comments
       c3 = colors.color4, -- conditionals
       c4 = colors.foreground, -- constants, constructors
-      c5 = colors.color5, -- builtin, floats,
+      c5 = colors.k_1, -- builtin, floats,
       c6 = colors.color3, --
-      c7 = colors.color6, -- strings
+      c7 = colors.k_0, -- strings
       c8 = colors.color1,
 
       error = colors.color1,
@@ -107,6 +71,7 @@ return {
 
       mb = colors.blue, -- matching bracket
       yellow = colors.color3,
+      kr = colors.error,
 
       none = "NONE",
     }

@@ -45,8 +45,8 @@ local colors = {
 
   none = "NONE",
 
-  background  = '#d9d5ba',
-  foreground  = '#444444',
+  background  = '#ffffe0',
+  foreground  = '#202224',
   foreground2 = '#888888',
   color0      = '#d9d5ba',
   cc          = '#d2cdad',
@@ -66,6 +66,19 @@ local colors = {
   color14     = '#a0bdb3',
   color15     = '#494847',
   color16     = '#555555',
+  fg_2        = '#45494e',
+  bg_2        = '#E0E0C5',
+
+
+
+  k_l  = '#ffffff',
+  k_l2 = '#f5f5f5',
+  k_b  = '#2f3747',
+  k_b2 = '#4e5c76',
+  k_0  = '#63966f',
+  k_1  = '#d69bc2',
+  k_2  = '#F28C28',
+
 }
 
 function M.setup(theme)
