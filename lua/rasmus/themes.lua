@@ -47,12 +47,12 @@ return {
       bg4 = colors.k_b2,
       bg5 = colors.k_l2,
 
-      fg  = colors.k_b,
+      fg = colors.k_b2,
       fg2 = colors.foreground2,
       fg3 = colors.k_l2,
 
       c1 = colors.k_1, -- booleans, numbers
-      c2 = colors.k_b2, -- comments
+      c2 = colors.k_b3, -- comments
       c3 = colors.color4, -- conditionals
       c4 = colors.foreground, -- constants, constructors
       c5 = colors.k_1, -- builtin, floats,

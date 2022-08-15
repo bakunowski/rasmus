@@ -38,7 +38,7 @@ local set_groups = function(c)
     SignColumn                 = { fg = c.fg, bg = c.bg }, -- column where signs are displayed
     EndOfBuffer                = { fg = c.fg2 }, -- ~ lines at the end of a buffer
     NormalFloat                = { fg = c.fg, bg = c.bg2 }, -- normal text and background color for floating windows
-    FloatBorder                = { fg = c.c3, bg = c.bg2 },
+    FloatBorder                = { fg = c.c2, bg = c.bg },
     ColorColumn                = { fg = c.none, bg = c.bg2 }, --  used for the columns set with 'colorcolumn'
     Conceal                    = { fg = c.c2 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor                     = { fg = c.none, bg = c.none, style = "reverse" }, -- the character under the cursor
