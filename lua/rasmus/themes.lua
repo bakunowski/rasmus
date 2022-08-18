@@ -41,24 +41,28 @@ return {
   end,
   light = function(colors)
     return {
-      bg  = colors.k_l,
+      bg  = colors.k_fo,
       bg2 = colors.k_l2,
       bg3 = colors.gray06,
       bg4 = colors.k_b2,
       bg5 = colors.k_l2,
 
-      fg = colors.k_b2,
+      -- fg = colors.k_b2,
+      fg = colors.k_f,
       fg2 = colors.foreground2,
       fg3 = colors.k_l2,
 
       c1 = colors.k_1, -- booleans, numbers
       c2 = colors.k_b3, -- comments
-      c3 = colors.color4, -- conditionals
+      -- c3 = colors.color4, -- conditionals
+      c3 = colors.alsdf, -- conditionals
       c4 = colors.foreground, -- constants, constructors
       c5 = colors.k_1, -- builtin, floats,
       c6 = colors.color3, --
       c7 = colors.k_0, -- strings
       c8 = colors.color1,
+      c9 = colors.k_1, -- types
+      c10 = colors.k_b3, -- brackets
 
       error = colors.color1,
       warning = colors.color3,

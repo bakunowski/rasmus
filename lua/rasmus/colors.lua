@@ -74,11 +74,18 @@ local colors = {
   k_l  = '#ffffff',
   k_l2 = '#f5f5f5',
   k_b  = '#2f3747',
+  k_f  = '#2b365f',
+  k_fo = '#fefffb',
   k_b2 = '#4e5c76',
   k_b3 = '#7d8ca9',
   k_0  = '#63966f',
   k_1  = '#d69bc2',
   k_2  = '#F28C28',
+  bbhg = '#F56C8C',
+  jfla = '#DE8957',
+  bfhf = '#6E8BF5',
+  alsd = '#5064b0',
+
 
 }
 
