@@ -189,14 +189,14 @@ local set_groups = function(c)
     TSField                    = { fg = c.fg }, -- For fields.
     TSFloat                    = { fg = c.c5 }, -- For floats.
     TSFunction                 = { fg = c.fg0, style = "bold" }, -- For fuction definitions.
-    TSFunctionCall             = { fg = c.fg }, -- For fuction calls.
+    TSFunctionCall             = { fg = c.c11 }, -- For fuction calls.
     TSFuncBuiltin              = { fg = c.c5 }, -- For builtin functions: `table.insert` in Lua.
     TSFuncMacro                = { fg = c.fg }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     TSInclude                  = { fg = c.c3 }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSKeyword                  = { fg = c.c3 }, -- For keywords that don't fall in previous categories.
     TSKeywordFunction          = { fg = c.c3 }, -- For keywords used to define a fuction.
     TSKeywordOperator          = { fg = c.fg }, -- For operators that are English words, e.g. `and`, `as`, `or`.
-    TSKeywordReturn            = { fg = c.c3 }, -- For the `return` and `yield` keywords.
+    TSKeywordReturn            = { fg = c.creturn }, -- For the `return` and `yield` keywords.
     TSLabel                    = { fg = c.fg }, -- For labels: `label:` in C and `:label:` in Lua.
     TSMethod                   = { fg = c.fg0, style = "bold" }, -- For method definitions.
     TSMethodCall               = { fg = c.fg }, -- For method calls.
@@ -342,7 +342,8 @@ M.colorscheme = function()
 
   local c = {}
   if (vim.opt.background:get() == "dark") then
-    c = themes.setup("dark")
+    -- c = themes.setup("dark")
+    c = themes.setup("tomorrow")
   else
     c = themes.setup("light")
   end

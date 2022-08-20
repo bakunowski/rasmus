@@ -86,6 +86,21 @@ local colors = {
   bfhf = '#6E8BF5',
   alsd = '#5064b0',
 
+  newDarkBase  = '#1d1f21',
+  newDarkBase1 = '#373b41',
+  newDarkBase2 = '#282a2e',
+  newLightBase = '#c5c8c6',
+  newGreen     = '#b5bd68',
+  newBlue      = '#81a2be',
+  newComment   = '#969896',
+  newPurple    = '#b294bb',
+  newYellow    = '#f0c674',
+  newAqua      = '#8abeb7',
+  newRed       = '#cc6666',
+  newOrange    = '#de935f',
+
+  -- #4d5057
+
 
 }
 

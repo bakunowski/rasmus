@@ -22,10 +22,12 @@ return {
       c8 = colors.color1,
       c9 = colors.bright_yellow2, -- types
       c10 = colors.gray06, -- brackets
+      c11 = colors.white,
 
       error = colors.red2,
       warning = colors.yellow,
       hint = colors.cyan2,
+      creturn = colors.blue3,
 
       -- diff
       change = colors.bright_blue,
@@ -63,10 +65,12 @@ return {
       c8 = colors.color1,
       c9 = colors.k_1, -- types
       c10 = colors.k_b3, -- brackets
+      c11 = colors.k_f,
 
       error = colors.color1,
       warning = colors.color3,
       hint = colors.foreground2,
+      creturn = colors.alsdf,
 
       -- diff
       change = colors.color3,
@@ -76,6 +80,48 @@ return {
       mb = colors.blue, -- matching bracket
       yellow = colors.color3,
       kr = colors.error,
+
+      none = "NONE",
+    }
+  end,
+  tomorrow = function(colors)
+    return {
+      bg  = colors.newDarkBase,
+      bg2 = colors.newDarkBase2,
+      bg3 = colors.gray06,
+      bg4 = colors.newDarkBase1,
+      bg5 = colors.gray11,
+
+      fg0 = colors.newLightBase,
+      fg  = colors.newLightBase,
+      fg2 = colors.gray12,
+      fg3 = colors.gray13,
+
+      c1 = colors.newOrange, -- booleans, numbers
+      c2 = colors.newComment, -- comments
+      c3 = colors.newPurple, -- conditionals
+      c4 = colors.white, -- constants, constructors
+      c5 = colors.newAqua, -- builtin, floats,
+      c6 = colors.newYellow, --
+      c7 = colors.newGreen, -- strings
+      c8 = colors.color1,
+      c9 = colors.newYellow, -- types
+      c10 = colors.gray06, -- brackets
+      c11 = colors.newBlue, -- function and method calls
+      creturn = colors.newRed, -- return
+
+      error = colors.red2,
+      warning = colors.yellow,
+      hint = colors.cyan2,
+
+      -- diff
+      change = colors.bright_blue,
+      add    = colors.bright_green,
+      delete = colors.bright_red,
+
+      mb = colors.light, -- matching bracket
+      yellow = colors.magenta,
+      kr = colors.white,
 
       none = "NONE",
     }
